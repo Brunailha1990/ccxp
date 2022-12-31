@@ -1,0 +1,100 @@
+* {
+    font-family: 'Verdana';
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #FFD900;
+    padding: 30px 60px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.texto {
+    flex-basis: 50%;
+    text-align: center;
+    background-color: #514988;
+    padding: 10px 60px 90px;
+    font-size: 28px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+
+.texto h2 {
+    color: #F3C61F;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.contador {
+    flex-basis: 50%;
+    padding: 15px;
+    text-align: center;
+}
+
+.contador h2 {
+    color: #E33881;
+}
+
+.contador #countdown {
+    color: #514988;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.ingressos {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.ingressos h2 {
+    color: #F3C61F;
+    flex-basis: 100%;
+}
+
+.ingressos img {
+    margin: 30px 0;
+}
+
+.botao {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao .button {
+    background-color: #514988;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 36px;
+    padding: 30px 90px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao .button:hover {
+    background-color: #F3C61F;
+}
+
+@media (max-width: 900px) {
+    .texto,
+    .contador,
+    .ingressos,
+    .botao {
+        flex-basis: 100%;
+    }
+}
